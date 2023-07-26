@@ -75,9 +75,9 @@ void setup() {
   pcf.setYear(23);                  //set year
   pcf.setMonth(7);                  //set month
   pcf.setDay(21);                   //set day
-  pcf.setHour(18);                  //set hour
-  pcf.setMinut(35);                 //set minute
-  pcf.setSecond(0);                 //set second
+  pcf.setHour(17);                  //set hour
+  pcf.setMinut(59);                 //set minute
+  pcf.setSecond(45);                 //set second
   pcf.startClock();                 //start the clock
 
 }
@@ -191,14 +191,34 @@ void loop() {
       }
       
       if (nowTime.hour == 6) {
-        servo.write(0);
-        delay(2500);
-        servo.write(40);
+        if (nowTime.minute == 0) {
+          if (nowTime.second == 0) {
+            servo.write(0);
+            delay(50);
+            servo.write(40);
+          }
+          else {
+            servo.write(40);
+          }
+        }
+        else {
+            servo.write(40);
+        }
       }
       else if (nowTime.hour == 18) {
-       servo.write(0);
-       delay(2500);
-       servo.write(40);
+        if (nowTime.minute == 0) {
+          if (nowTime.second == 0) {
+            servo.write(0);
+            delay(50);
+            servo.write(40);
+          }
+          else {
+            servo.write(40);
+          }
+        }
+        else {
+            servo.write(40);
+        }
       }
       else {
        servo.write(40);
