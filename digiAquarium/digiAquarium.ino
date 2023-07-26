@@ -191,14 +191,14 @@ void loop() {
       }
       
       if (nowTime.hour == 6) {
-        servo.write(servoDegree);
-        delay(2500);
         servo.write(0);
+        delay(2500);
+        servo.write(40);
       }
       else if (nowTime.hour == 18) {
-       servo.write(servoDegree);
-       delay(2500);
        servo.write(0);
+       delay(2500);
+       servo.write(40);
       }
       else {
        servo.write(40);
