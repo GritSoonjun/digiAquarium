@@ -75,9 +75,9 @@ void setup() {
   pcf.setYear(23);                  //set year
   pcf.setMonth(7);                  //set month
   pcf.setDay(21);                   //set day
-  pcf.setHour(17);                  //set hour
-  pcf.setMinut(59);                 //set minute
-  pcf.setSecond(45);                 //set second
+  pcf.setHour(2);                  //set hour
+  pcf.setMinut(14);                 //set minute
+  pcf.setSecond(0);                 //set second
   pcf.startClock();                 //start the clock
 
 }
@@ -172,20 +172,77 @@ void loop() {
       Time nowTime = pcf.getTime();//get current time
 
       if (nowTime.day == 7) {
-       digitalWrite(PUMP_PIN_6, HIGH);
+        if (nowTime.hour == 6) {
+          if (nowTime.minute == 0) {
+            if (nowTime.second == 0) {
+              digitalWrite(PUMP_PIN_6, HIGH);
+            }
+            else{
+              digitalWrite(PUMP_PIN_6, LOW);
+            }
+          }
+          else {
+            digitalWrite(PUMP_PIN_6, LOW);
+          }
+        }
+        else {
+          digitalWrite(PUMP_PIN_6, LOW);
+        }
       }
       else if (nowTime.day == 14) {
-       digitalWrite(PUMP_PIN_6, HIGH);
-      }
+        if (nowTime.hour == 6) {
+          if (nowTime.minute == 0) {
+            if (nowTime.second == 0) {
+              digitalWrite(PUMP_PIN_6, HIGH);
+            }
+            else {
+              digitalWrite(PUMP_PIN_6, LOW);
+            }
+          }
+          else {
+            digitalWrite(PUMP_PIN_6, LOW);
+          }
+        }
+        else {
+          digitalWrite(PUMP_PIN_6, LOW);
+        }
+      }   
       else if (nowTime.day == 21) {
-        digitalWrite(PUMP_PIN_6, HIGH);
-      }
+        if (nowTime.hour == 6) {
+          if (nowTime.minute == 0) {
+            if (nowTime.second == 0) {
+              digitalWrite(PUMP_PIN_6, HIGH);
+            }
+            else {
+              digitalWrite(PUMP_PIN_6, LOW);
+            }
+          }
+          else {
+            digitalWrite(PUMP_PIN_6, LOW);
+          }
+        }
+        else {
+          digitalWrite(PUMP_PIN_6, LOW);
+        }
+      } 
       else if (nowTime.day == 28) {
-       digitalWrite(PUMP_PIN_6, HIGH);
-      }
-      else if (nowTime.day == 14) {
-       digitalWrite(PUMP_PIN_6, HIGH);
-      }
+        if (nowTime.hour == 6) {
+          if (nowTime.minute == 0) {
+            if (nowTime.second == 0) {
+              digitalWrite(PUMP_PIN_6, HIGH);
+            }
+            else {
+              digitalWrite(PUMP_PIN_6, LOW);
+            }
+          }
+          else {
+            digitalWrite(PUMP_PIN_6, LOW);
+          }
+        }
+        else {
+          digitalWrite(PUMP_PIN_6, LOW);
+        }
+      } 
       else {
        digitalWrite(PUMP_PIN_6, LOW);
       }
