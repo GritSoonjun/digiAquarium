@@ -84,7 +84,7 @@ void setup() {
 
   pcf.startClock();//start the clock
 
-  servo.attach(5);
+  servo.attach(3);
 
   microbit.begin();
 
