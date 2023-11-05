@@ -10,5 +10,5 @@ Project name : digiAquarium  Project code : 0607202325662348  Project developer:
 ##
 - Version C : BBC micro:bit v2
 ##
-Version A, B code with Arduino IDE
-Version C code with Microsoft MakeCode for micro:bit
+- Version A, B code with Arduino IDE
+- Version C code with Microsoft MakeCode for micro:bit
