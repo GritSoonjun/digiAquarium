@@ -9,7 +9,9 @@ Project name : digiAquarium  Project code : 0607202325662348  Project developer:
 - Version B Nordic Semiconductor nRF5 Boards via https://sandeepmistry.github.io/arduino-nRF5/package_nRF5_boards_index.json.
 ##
 - Version C : BBC micro:bit v2
+- Beta Version : BBC micro:bit v2
 ##
 Development
 - Version A, B code with Arduino IDE
 - Version C code with Microsoft MakeCode for micro:bit
+- Beta Version code has not yet been calibrated
