@@ -5,5 +5,5 @@
 - Version A, B no longer support
 - Latest release : Version C
 - Beta version now avaliable!
-##
+## Support
 Need help? Contact us soonjun.grit@gmail.com
